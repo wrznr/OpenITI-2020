@@ -1,2 +1,2 @@
-# slide-template
-Template for [`remarkjs`](https://remarkjs.com/)-based slides deployed via GitHub Pages
+# OpenITI-2020
+Slides for the OCR-D talk at the Open Islamicate Texts Initiative Workshop
