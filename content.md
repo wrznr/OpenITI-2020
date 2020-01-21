@@ -58,6 +58,22 @@ count: false
 
 ---
 
+# OCR-D: the project
+
+- DFG-organized expert Workshop *Verfahren zur Verbesserung von OCR-Ergebnissen* (2014):
+  > A concerted effort for improving OCR is required!
+- Large-scale funding initiative
+    + Targeting the *Verzeichnisse der im deutschen Sprachraum erschienenen Drucke* (VDs)
+        * List of **all printed publications** issued in the German language area
+        * Sorted by centuries (VD16, VD17, VD18)
+        * (Image digitization completed)
+    + Coordinated and prepared by OCR-D (2015--2019)
+	* Identification of requirements
+        * Setting up a call for participation
+        * Implementing a technical framework
+
+---
+
 class: part-slide
 count: false
 
