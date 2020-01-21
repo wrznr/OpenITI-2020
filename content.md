@@ -6,7 +6,7 @@ layout: true
   <table>
     <tr>
       <td style="text-align:right">Sächsische Landesbibliothek – Staats- und Universitätsbibliothek</td>
-      <td>Date</td>
+      <td>2020-01-29</td>
       <td style="text-align:right"><a href="https://www.slub-dresden.de/">www.slub-dresden.de</a></td>
     </tr>
     <tr>
@@ -25,10 +25,10 @@ layout: true
       <td style="text-align:left">Referat 2.5</td>
     </tr>
     <tr>
-      <td style="font-size:8pt"><b>Date</b></td>
+      <td style="font-size:8pt"><b>2020-01-29</b></td>
     </tr>
     <tr>
-      <td style="font-size:8pt">Event</td>
+      <td style="font-size:8pt">OpenITI WS 2020</td>
     </tr>
   </table>
 </div>
@@ -38,8 +38,8 @@ layout: true
 class: title-slide
 count: false
 
-# Title
-## Subtitle
+# Multi-source OCR workflows with OCR-D
+## Open Islamicate Texts Initiative Workshop 2020
 
 ---
 
@@ -63,5 +63,5 @@ class: part-slide
 # Many thanks for your attention!
 
 <center>
-<a href="https://wrznr.github.io/slide-template/">wrznr.github.io/slide-template</a>
+<a href="https://wrznr.github.io/OpenITI-2020/">wrznr.github.io/OpenITI-2020</a>
 </center>
