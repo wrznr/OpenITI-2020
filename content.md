@@ -5,13 +5,13 @@ layout: true
 <div class="my-footer">
   <table>
     <tr>
-      <td style="text-align:right">Sächsische Landesbibliothek – Staats- und Universitätsbibliothek</td>
-      <td>2020-01-29</td>
+      <td style="text-align:right">Saxon State and University Library Dresden</td>
+      <td></td>
       <td style="text-align:right"><a href="https://www.slub-dresden.de/">www.slub-dresden.de</a></td>
     </tr>
     <tr>
-      <td style="text-align:right">Referat 2.5</td>
-      <td />
+      <td style="text-align:right">OpenITI WS</td>
+      <td>2020-01-29</td>
     </tr>
   </table>
 </div>
@@ -22,13 +22,13 @@ layout: true
       <td style="text-align:left"><b>Kay-Michael Würzner</b></td>
     </tr>
     <tr>
-      <td style="text-align:left">Referat 2.5</td>
+      <td style="text-align:left">Research Software Engineer</td>
     </tr>
     <tr>
       <td style="font-size:8pt"><b>2020-01-29</b></td>
     </tr>
     <tr>
-      <td style="font-size:8pt">OpenITI WS 2020</td>
+      <td style="font-size:8pt">Open Islamicate Texts Initiative Workshop</td>
     </tr>
   </table>
 </div>
@@ -39,22 +39,36 @@ class: title-slide
 count: false
 
 # Multi-source OCR workflows with OCR-D
-## Open Islamicate Texts Initiative Workshop 2020
+## Building blocks for superior digital text
 
 ---
 
 # Overview
 
-- Section 1
-  + Subsection 1
-- Section 2
+- OCR-D: the project and its philosophy
+- `ocrd`: the toolkit and its design
+- Outlook and collaboration options
 
 ---
 
 class: part-slide
 count: false
 
-# Topic 1
+# OCR-D
+
+---
+
+class: part-slide
+count: false
+
+# `ocrd`
+
+---
+
+class: part-slide
+count: false
+
+# Outlook and collaboration options
 
 ---
 
