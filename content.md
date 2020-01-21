@@ -45,8 +45,8 @@ count: false
 
 # Overview
 
-- OCR-D: the project and its philosophy
-- `ocrd`: the toolkit and its design
+- OCR-D: The project and its philosophy
+- `ocrd`: The toolkit and its design
 - Outlook and collaboration options
 
 ---
@@ -58,7 +58,7 @@ count: false
 
 ---
 
-# OCR-D: the project
+# OCR-D: The project
 
 - DFG-organized expert Workshop *Verfahren zur Verbesserung von OCR-Ergebnissen* (2014):
   > A concerted effort for improving OCR is required!
@@ -67,10 +67,39 @@ count: false
         * List of **all printed publications** issued in the German language area
         * Sorted by centuries (VD16, VD17, VD18)
         * (Image digitization completed)
-    + Coordinated and prepared by OCR-D (2015--2019)
-	* Identification of requirements
-        * Setting up a call for participation
-        * Implementing a technical framework
+    + Coordinated and prepared by OCR-D
+        * Herzog August Library Wolfenbüttel
+        * Berlin State Library
+        * Berlin-Brandenburg Academy of Sciences and Humanities
+        * Karlsruhe Institute of Technology
+
+---
+
+# OCR-D: Timeline
+
+- Stage 1 (2015--2017)
+    + Identification of requirements
+    + Setting up a call for participation
+    + Planning a technical framework
+- Stage 2 (2018--2020)
+    + Implementing the technical framework
+    + (Quasi-)Simultaneous operation of **eight module projects**
+        * Image optimization: German Research Centre for Artificial Intelligence
+        * Layout analysis: German Research Centre for Artificial Intelligence; University of Würzburg
+        * OCR Post correction: University of Leipzig; Ludwig Maximilian University of Munich
+        * Font identification and OCR training: Johannes Gutenberg University Mainz with Friedrich–Alexander University Erlangen–Nürnberg and University of Leipzig
+        * Improving Tesseract: Mannheim University Library
+        * Long-term archiving: Göttingen State and University Library
+    + Early adoption in **eight different libraries**
+        * 
+
+---
+
+# OCR-D: Timeline
+
+- Stage 3 (2020--2022, if approved)
+    + Going productive
+        
 
 ---
 
