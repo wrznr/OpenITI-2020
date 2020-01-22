@@ -54,7 +54,7 @@ count: false
 class: part-slide
 count: false
 
-# OCR-D
+# The project
 
 ---
 
@@ -127,13 +127,22 @@ count: false
 class: part-slide
 count: false
 
-# `ocrd`
+# The toolkit
 
 ---
 
-# `ocrd`
+# `ocrd`: The toolkit
 
-
+- Collection of repositories: [github.com/OCR-D](https://github.com/OCR-D)
+    1. Specifications
+        + Formats
+        + Interfaces
+    2. API/CLI
+        + Python- and BASH-based
+        + Exposing formats and interfaces
+    3. Sample processors
+        + Wrappers to OCR-related tools
+- Developed and maintained by OCR-D
 
 ---
 
