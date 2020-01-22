@@ -81,32 +81,59 @@ count: false
     + Identification of requirements
     + Setting up a call for participation
     + Planning a technical framework
-- Stage 2 (2018--2020)
-    + Implementing the technical framework
-    + (Quasi-)Simultaneous operation of **eight module projects**
-        * Image optimization: German Research Centre for Artificial Intelligence
-        * Layout analysis: German Research Centre for Artificial Intelligence; University of Würzburg
-        * OCR Post correction: University of Leipzig; Ludwig Maximilian University of Munich
-        * Font identification and OCR training: Johannes Gutenberg University Mainz with Friedrich–Alexander University Erlangen–Nürnberg and University of Leipzig
-        * Improving Tesseract: Mannheim University Library
-        * Long-term archiving: Göttingen State and University Library
-    + Early adoption in **eight different libraries**
-        * 
+![Functional Model](img/functional_model.png)
 
 ---
 
 # OCR-D: Timeline
 
-- Stage 3 (2020--2022, if approved)
-    + Going productive
-        
+- Stage 2 (2018--2020)
+    + Implementing the technical framework
+    + (Quasi-)Simultaneous operation of **eight module projects**
+        * **Image optimization**: German Research Centre for Artificial Intelligence
+        * **Layout analysis**: German Research Centre for Artificial Intelligence; University of Würzburg
+        * **OCR Post correction**: University of Leipzig; Ludwig Maximilian University of Munich
+        * **Font identification and OCR training**: Johannes Gutenberg University Mainz with Friedrich–Alexander University Erlangen–Nürnberg and University of Leipzig
+        * **Improving Tesseract**: Mannheim University Library
+        * **Long-term archiving**: Göttingen State and University Library
+    + Early adoption in **nine different libraries**
+        * Libraries of the coordination project partners
+	* University and State Library Darmstadt
+        * University and State Library Halle
+        * Göttingen State and University Library
+        * Mannheim University Library
+        * Heidelberg University Library
+        * Saxon State and University Library Dresden
 
+---
+
+# OCR-D: Timeline
+
+- Hiatus (Final workshop in Bonn, 2020-02-12)
+- Stage 3 (2020--2023, if approved)
+    + Instanciation of the OCR-D software in libraries and archives
+    + Development of usage models
+        * Commercial providers of digitization services?
+        * “Central” (public) digitization services?
+        * Local infrastructure in each facility
+    + Development of productive workflows
+        * Optimized tool chains for specific materials
+        * OCR and OLR models
+- Stage 4 (???)
+    + Going productive, i.e. mass digitization of the VDs under comparable conditions
+        
 ---
 
 class: part-slide
 count: false
 
 # `ocrd`
+
+---
+
+# `ocrd`
+
+
 
 ---
 
