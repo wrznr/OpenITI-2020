@@ -98,7 +98,7 @@ count: false
         * **Long-term archiving**: Göttingen State and University Library
     + Early adoption in **nine different libraries**
         * Libraries of the coordination project partners
-	* University and State Library Darmstadt
+        * University and State Library Darmstadt
         * University and State Library Halle
         * Göttingen State and University Library
         * Mannheim University Library
