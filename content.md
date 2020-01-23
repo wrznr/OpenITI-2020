@@ -56,7 +56,7 @@ count: false
 
 # The project
 
----
+----
 
 # OCR-D: The project
 
@@ -73,7 +73,7 @@ count: false
         * Berlin-Brandenburg Academy of Sciences and Humanities
         * Karlsruhe Institute of Technology
 
----
+----
 
 # OCR-D: Timeline
 
@@ -83,7 +83,7 @@ count: false
     + Planning a technical framework
 ![Functional Model](img/functional_model.png)
 
----
+----
 
 # OCR-D: Timeline
 
@@ -105,7 +105,7 @@ count: false
         * Heidelberg University Library
         * Saxon State and University Library Dresden
 
----
+----
 
 # OCR-D: Timeline
 
@@ -129,7 +129,7 @@ count: false
 
 # The toolkit
 
----
+----
 
 # `ocrd`: The toolkit
 
@@ -150,14 +150,24 @@ count: false
         + Wrappers to OCR-related tools
 - Developed and maintained by OCR-D
 
----
+----
 
 # `ocrd`: The toolkit
 
 - Sample workflow
-    1. Clone a METS file
+    1. Clone some [METS file](https://digital.slub-dresden.de/data/kitodo/adrefudio_20253082Z_1907/adrefudio_20253082Z_1907_mets.xml)
+    ```shell
+    $ ocrd workspace clone LINK_TO_METS .
     ```
-    $> ocrd workspace clone https://digital.slub-dresden.de/data/kitodo/adrefudio_20253082Z_1907/adrefudio_20253082Z_1907_mets.xml .
+    2. Identify the file group containing the images
+    ```xml
+    <mets:fileGrp USE="ORIGINAL">
+    </mets:fileGrp>
+    ```
+    3. Apply desired processors
+    ```shell
+    $ ocrd-cis-ocropy-binarize -I ORIGINAL -O BIN -m mets.xml
+    $ ocrd-tesserocr-segment-region -I BIN -O REGIONS -m mets.xml
     ```
 
 ---
