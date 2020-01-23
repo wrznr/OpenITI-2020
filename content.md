@@ -133,6 +133,11 @@ count: false
 
 # `ocrd`: The toolkit
 
+- Wording
+    * **Operation**: Step in an OCR workflow
+    * **Processor**: Program which performs an operation
+    * **Module**: Collection of processors
+    * **Workspace**: 
 - Collection of repositories: [github.com/OCR-D](https://github.com/OCR-D)
     1. Specifications
         + Formats
@@ -140,9 +145,14 @@ count: false
     2. API/CLI
         + Python- and BASH-based
         + Exposing formats and interfaces
+        + Provides common utility functions (e.g. image rotation and cutting)
     3. Sample processors
         + Wrappers to OCR-related tools
 - Developed and maintained by OCR-D
+
+---
+
+# 
 
 ---
 

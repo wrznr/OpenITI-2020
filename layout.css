@@ -58,6 +58,8 @@ ul > li > ol > li > ul > li { font-size:1.1rem }
   width: 100%
 }
 
+.my-header code { font-size:2.5rem!important }
+
 .my-footer {
   background-image: url("img/slub_logo_wo.svg");
   background-repeat: no-repeat;
