@@ -162,6 +162,7 @@ count: false
     2. Identify the file group containing the images
     ```xml
     <mets:fileGrp USE="ORIGINAL">
+     ...
     </mets:fileGrp>
     ```
     3. Apply desired processors
