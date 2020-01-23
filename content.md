@@ -219,7 +219,7 @@ count: false
 - `ocrd_olena`: Wrapper for [Olena/scribo](https://www.lrde.epita.fr/wiki/Olena/Modules#SCRIBO) binarization
     + Olena: OCR-D-like project in France
     + Many valuable tools
-    + In particular, multiple locally adaptive binarization algorithms (e.g., Wolf et al. 2002, Lazzara and Géraud 2014)
+    + In particular, multiple locally adaptive binarization algorithms (e.g., [Wolf et al. 2002](https://hal.archives-ouvertes.fr/hal-02181880/document), [Lazzara and Géraud 2014](https://hal.archives-ouvertes.fr/hal-02181880/document))
 
 ---
 
@@ -243,11 +243,11 @@ count: false
 </center>
 <p style="font-size:1.4rem">
 Zuletzt wird anders nichts dara<span style="color:red">n</span>s/<br/>
-Di<span style="color:red">r</span> <span style="color:red">z</span>acke<span style="color:red">1</span> dieser Erden <span style="color:red">r ’’</span><br/>
+Di<span style="color:red">r</span> <span style="color:red">z</span>acke<span style="color:red">1</span> dieſer Erden <span style="color:red">r ’’</span><br/>
 Die Sonne/Kind<span style="color:red">r</span>r/Fre<span style="color:red">nu</span>d’ vnd Hauß<br/>
 Muß übergeben werden/ <span style="color:red">’’</span><br/>
-Denn di<span style="color:red">r</span>Nat<span style="color:red">n</span>r erlässt vns<span style="color:red">’ mehr ’</span><br/>
-Der stre<span style="color:red">u</span>genSch<span style="color:red">n</span>ld <span style="color:red">o</span>ndPflich<span style="color:red">r</span>.
+Denn di<span style="color:red">r</span>Nat<span style="color:red">n</span>r erläſſt vns<span style="color:red">’ mehr ’</span><br/>
+Der ſtre<span style="color:red">u</span>genSch<span style="color:red">n</span>ld <span style="color:red">o</span>ndPflich<span style="color:red">r</span>.
 </p>
 ]
 .fifty[
@@ -256,14 +256,18 @@ Der stre<span style="color:red">u</span>genSch<span style="color:red">n</span>ld
 </center>
 <p style="font-size:1.4rem">
 Zuletzt wird anders nichts dara<span style="color:red">n</span>s/<br/>
-Die Fackel dieser Erden<br/>
+Die Fackel dieſer Erden<br/>
 Die Sonne/Kinder/Fren<span style="color:red">n</span>nd’ vnd Hauß<br/>
 Muß übergeben werden/<br/>
-Denn de<span style="color:red">e</span>Na<span style="color:red">in</span>r erlässt vns nicht<br/>
-Der strengen Schuld vndPflicht.
+Denn de<span style="color:red">e</span>Na<span style="color:red">in</span>r erläſſt vns nicht<br/>
+Der ſtrengen Schuld vndPflicht.
 </p>
 ]
 ]
+
+- Same engine, same model, different binarization
+- Most existing OCR models were trained on B/W.
+- Generated images will most likely be B/W. 
 
 ---
 
