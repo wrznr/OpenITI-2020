@@ -56,7 +56,7 @@ count: false
 
 # The project
 
-----
+---
 
 # OCR-D: The project
 
@@ -73,7 +73,7 @@ count: false
         * Berlin-Brandenburg Academy of Sciences and Humanities
         * Karlsruhe Institute of Technology
 
-----
+---
 
 # OCR-D: Timeline
 
@@ -83,7 +83,7 @@ count: false
     + Planning a technical framework
 ![Functional Model](img/functional_model.png)
 
-----
+---
 
 # OCR-D: Timeline
 
@@ -105,7 +105,7 @@ count: false
         * Heidelberg University Library
         * Saxon State and University Library Dresden
 
-----
+---
 
 # OCR-D: Timeline
 
@@ -129,7 +129,7 @@ count: false
 
 # The toolkit
 
-----
+---
 
 # `ocrd`: The toolkit
 
@@ -150,7 +150,7 @@ count: false
         + Wrappers to OCR-related tools
 - Developed and maintained by OCR-D
 
-----
+---
 
 # `ocrd`: The toolkit
 
