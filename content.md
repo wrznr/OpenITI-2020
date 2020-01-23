@@ -286,6 +286,19 @@ count: false
 
 ---
 
+# Outlook and collaboration options
+
+- Text recognition is a solved problem.
+- Segmentation into lines is a solved problem.
+- Segmentation into regions is an open problem.
+
+- Final workshop and evaluation by DFG in February
+- Further maintenance of the OCR-D software stack by SBB, Uni Leipzig and SLUB
+- Existing collaboration with [OCR4all](https://github.com/OCR4all) and [Qurator](https://qurator.ai/)
+- We are open for suggestions and we're ready to make your tools OCR-D-fit!
+
+---
+
 class: part-slide
 
 # Many thanks for your attention!
