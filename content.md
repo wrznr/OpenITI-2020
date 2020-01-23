@@ -47,6 +47,7 @@ count: false
 
 - OCR-D: The project and its philosophy
 - `ocrd`: The toolkit and its design
+- Notate bene
 - Outlook and collaboration options
 
 ---
@@ -137,7 +138,7 @@ count: false
     * **Operation**: Step in an OCR workflow
     * **Processor**: Program which performs an operation
     * **Module**: Collection of processors
-    * **Workspace**: 
+    * **Workspace**: Directory containing processor in- and output
 - Collection of repositories: [github.com/OCR-D](https://github.com/OCR-D)
     1. Specifications
         + Formats
@@ -170,6 +171,48 @@ count: false
     $ ocrd-cis-ocropy-binarize -I ORIGINAL -O BIN -m mets.xml
     $ ocrd-tesserocr-segment-region -I BIN -O REGS -m mets.xml
     ```
+
+---
+
+# `ocrd`: The toolkit
+
+- Formats
+    * [METS XML](http://www.loc.gov/standards/mets/)
+        + De-facto standard in (German) libraries
+        + Represents a workspace, references files in the workspace
+        + Contains **document-related** results (e.g., book structure)
+    * [PAGE XML](https://github.com/PRImA-Research-Lab/PAGE-XML)
+        + Mainly used in scientific competitions
+        + Developed by [PRImA](https://www.primaresearch.org/)
+        + More versatile than e.g. ALTO XML
+    * [JSON](https://www.json.org/)
+        + Used for parameter handover
+    * [PNG](http://www.libpng.org/pub/png/)
+        + Used to store intermediate results (i.e., `AlternativeImage`)
+- ...
+
+---
+
+# `ocrd`: Available modules and processors
+
+- `ocrd_tesserocr`: OCR-D wrappers for [Tesseract](https://github.com/tesseract-ocr/tesseract)
+    + Use API via [`tesserocr`](https://github.com/sirfz/tesserocr)
+    + Modular processors for
+        * Binarization
+        * Deskewing
+        * Segmentation (region, line and word output)
+        * Text recognition
+- `ocrd_cis_ocropy`: OCR-D wrappers for [OCRopy](https://github.com/tmbdev/ocropy)
+    + Maintained by Robert Sachunsky (University of Leipzig)
+    + Includes many bug fixes, optimizations and additions to original OCRopy
+    + Modular processors for
+        * Binarization
+        * Deskewing
+        * Denoising
+        * Dewarping
+        * Clipping (removal of region “intruders”)
+        * Segmentation (region and line output)
+        * Text recognition
 
 ---
 
