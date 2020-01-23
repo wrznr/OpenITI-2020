@@ -156,7 +156,7 @@ count: false
 
 - Sample workflow
     1. Clone some [METS file](https://digital.slub-dresden.de/data/kitodo/adrefudio_20253082Z_1907/adrefudio_20253082Z_1907_mets.xml)
-    ```shell
+    ```sh
     $ ocrd workspace clone LINK_TO_METS .
     ```
     2. Identify the file group containing the images
@@ -165,9 +165,9 @@ count: false
     </mets:fileGrp>
     ```
     3. Apply desired processors
-    ```shell
+    ```sh
     $ ocrd-cis-ocropy-binarize -I ORIGINAL -O BIN -m mets.xml
-    $ ocrd-tesserocr-segment-region -I BIN -O REGIONS -m mets.xml
+    $ ocrd-tesserocr-segment-region -I BIN -O REGS -m mets.xml
     ```
 
 ---
