@@ -152,7 +152,13 @@ count: false
 
 ---
 
-# 
+# `ocrd`: The toolkit
+
+- Sample workflow
+    1. Clone a METS file
+    ```
+    $> ocrd workspace clone https://digital.slub-dresden.de/data/kitodo/adrefudio_20253082Z_1907/adrefudio_20253082Z_1907_mets.xml .
+    ```
 
 ---
 
