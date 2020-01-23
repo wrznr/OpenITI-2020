@@ -65,9 +65,9 @@ count: false
   > A concerted effort for improving OCR is required!
 - Large-scale funding initiative
     + Targeting the *Verzeichnisse der im deutschen Sprachraum erschienenen Drucke* (VDs)
-        * List of **all printed publications** issued in the German language area
+        * List of **all printed publications** issued in German or in the German language area
         * Sorted by centuries (VD16, VD17, VD18)
-        * (Image digitization completed)
+        * (Image digitization completed, approx. 460 000 volumes)
     + Coordinated and prepared by OCR-D
         * Herzog August Library Wolfenbüttel
         * Berlin State Library
@@ -116,7 +116,7 @@ count: false
     + Development of usage models
         * Commercial providers of digitization services?
         * “Central” (public) digitization services?
-        * Local infrastructure in each facility
+        * Local infrastructure in each facility?
     + Development of productive workflows
         * Optimized tool chains for specific materials
         * OCR and OLR models
@@ -195,24 +195,83 @@ count: false
 
 # `ocrd`: Available modules and processors
 
-- `ocrd_tesserocr`: OCR-D wrappers for [Tesseract](https://github.com/tesseract-ocr/tesseract)
+- `ocrd_tesserocr`: Wrappers for [Tesseract](https://github.com/tesseract-ocr/tesseract)
     + Use API via [`tesserocr`](https://github.com/sirfz/tesserocr)
     + Modular processors for
         * Binarization
         * Deskewing
         * Segmentation (region, line and word output)
         * Text recognition
-- `ocrd_cis_ocropy`: OCR-D wrappers for [OCRopy](https://github.com/tmbdev/ocropy)
+- `ocrd_cis_ocropy`: Wrappers for [OCRopy](https://github.com/tmbdev/ocropy)
     + Maintained by Robert Sachunsky (University of Leipzig)
     + Includes many bug fixes, optimizations and additions to original OCRopy
     + Modular processors for
         * Binarization
-        * Deskewing
-        * Denoising
-        * Dewarping
+        * Image optimization (deskewing, denoising, dewarping)
         * Clipping (removal of region “intruders”)
         * Segmentation (region and line output)
         * Text recognition
+
+---
+
+# `ocrd`: Available modules and processors
+
+- `ocrd_olena`: Wrapper for [Olena/scribo](https://www.lrde.epita.fr/wiki/Olena/Modules#SCRIBO) binarization
+    + Olena: OCR-D-like project in France
+    + Many valuable tools
+    + In particular, multiple locally adaptive binarization algorithms (e.g., Wolf et al. 2002, Lazzara and Géraud 2014)
+
+---
+
+# `ocrd`: A sound workflow
+
+---
+
+class: part-slide
+count: false
+
+# Notate bene
+
+---
+
+# NB 1: Binarization
+
+.cols[
+.fifty[
+<center>
+<img src="img/otsu.svg" />
+</center>
+<p style="font-size:1.4rem">
+Zuletzt wird anders nichts dara<span style="color:red">n</span>s/<br/>
+Di<span style="color:red">r</span> <span style="color:red">z</span>acke<span style="color:red">1</span> dieser Erden <span style="color:red">r ’’</span><br/>
+Die Sonne/Kind<span style="color:red">r</span>r/Fre<span style="color:red">nu</span>d’ vnd Hauß<br/>
+Muß übergeben werden/ <span style="color:red">’’</span><br/>
+Denn di<span style="color:red">r</span>Nat<span style="color:red">n</span>r erlässt vns<span style="color:red">’ mehr ’</span><br/>
+Der stre<span style="color:red">u</span>genSch<span style="color:red">n</span>ld <span style="color:red">o</span>ndPflich<span style="color:red">r</span>.
+</p>
+]
+.fifty[
+<center>
+<img src="img/wolf.svg" />
+</center>
+<p style="font-size:1.4rem">
+Zuletzt wird anders nichts dara<span style="color:red">n</span>s/<br/>
+Die Fackel dieser Erden<br/>
+Die Sonne/Kinder/Fren<span style="color:red">n</span>nd’ vnd Hauß<br/>
+Muß übergeben werden/<br/>
+Denn de<span style="color:red">e</span>Na<span style="color:red">in</span>r erlässt vns nicht<br/>
+Der strengen Schuld vndPflicht.
+</p>
+]
+]
+
+---
+
+# NB 2: Image preprocessing
+
+---
+
+# NB 3: Training Tesseract
 
 ---
 
