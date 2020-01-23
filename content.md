@@ -133,7 +133,7 @@ count: false
 
 # `ocrd`: The toolkit
 
-- Wording
+- Key concepts:
     * **Operation**: Step in an OCR workflow
     * **Processor**: Program which performs an operation
     * **Module**: Collection of processors
