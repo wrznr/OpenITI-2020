@@ -236,9 +236,14 @@ count: false
     + Rule-based post processing of segmentation results using [`shapely`](https://github.com/Toblerity/Shapely)
     + Evaluation of segmentation by GT comparison (WIP)
 - [`ocrd_kraken`](https://github.com/OCR-D/ocrd_kraken): Wrappers for the [kraken OCR suite](http://kraken.re/)
+    + However, not with the current development branch `blla`
 - [`ocrd_calamari`](https://github.com/OCR-D/ocrd_calamari): Wrappers for the [Calamari OCR engine](https://github.com/Calamari-OCR/calamari)
 - [`dinglehopper`](https://github.com/qurator-spk/dinglehopper): OCR evaluation tool developed by Qurator with an OCR-D interface
-- ...
+    + Uses text from multiple input file groups
+    + CER/WER computation per page
+- [`workflow-configuration`](https://github.com/bertsky/workflow-configuration): `make`-based combination of processors
+    + Parallelization on document level
+- [`ocrd_all`](https://github.com/OCR-D/ocrd_all): Master repository which includes most OCR-D repositories as submodules
 
 ---
 
@@ -284,7 +289,7 @@ count: false
 
 ![Japanese with Latin](img/jap_lat.png)
 ```
-レコ ー ド で は EMI、 カ プリ ッ ツ ィ オ 、 和 徳間 な どの レー ヴェ ル で
+レコ ー ド で は EMI、 カ プリ ッ ツ ィ オ 、 徳間 な どの レー ヴェ ル で
 ```
 
 ---
@@ -357,6 +362,27 @@ Der ſtrengen Schuld vndPflicht.
 ---
 
 # NB 3: Training Tesseract
+
+- Tesseract's [model stack](https://github.com/tesseract-ocr/tessdata_best)
+    + Trained on **synthetic materials**
+        * Web text
+        * Many, many fonts
+        * Rendered as image
+    + Great number of existing models
+    + Very robust but often not “great”
+- [Training tools](https://github.com/tesseract-ocr/tesstrain) for Tesseract
+    + Allows training with **real images**
+    + Allows **fine tuning** of existing models
+    + Comfortable invocation via `make`
+- In combination with the workflow sketched above:
+![Line of handwritten text](img/htr_line_raw.png)
+- **Handwritten text recognition** with Tesseract is possible!  
+
+---
+
+# NB 3: Training Tesseract
+
+count: false
 
 - Tesseract's [model stack](https://github.com/tesseract-ocr/tessdata_best)
     + Trained on **synthetic materials**
