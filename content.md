@@ -287,7 +287,9 @@ count: false
     3. Recognize text with
        `ocrd-tesserocr-recognize -p '{"model":"Latin+Japanese"}'`
 
-![Japanese with Latin](img/jap_lat.png)
+<center>
+<img src="img/jap_lat.png" />
+</center>
 ```
 レコ ー ド で は EMI、 カ プリ ッ ツ ィ オ 、 徳間 な どの レー ヴェ ル で
 ```
