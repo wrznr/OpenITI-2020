@@ -232,14 +232,13 @@ count: false
 
 # `ocrd`: Available modules and processors
 
-- [`ocrd_segment`](https://github.com/OCR-D/ocrd_segment): Worflow-relevant, segmentation-related processors
+- [`ocrd_segment`](https://github.com/OCR-D/ocrd_segment): Segmentation-related processors
     + Rule-based post processing of segmentation results using [`shapely`](https://github.com/Toblerity/Shapely)
     + Evaluation of segmentation by GT comparison (WIP)
 - [`ocrd_kraken`](https://github.com/OCR-D/ocrd_kraken): Wrappers for the [kraken OCR suite](http://kraken.re/)
     + However, not with the current development branch `blla`
 - [`ocrd_calamari`](https://github.com/OCR-D/ocrd_calamari): Wrappers for the [Calamari OCR engine](https://github.com/Calamari-OCR/calamari)
 - [`dinglehopper`](https://github.com/qurator-spk/dinglehopper): OCR evaluation tool developed by Qurator with an OCR-D interface
-    + Uses text from multiple input file groups
     + CER/WER computation per page
 - [`workflow-configuration`](https://github.com/bertsky/workflow-configuration): `make`-based combination of processors
     + Parallelization on document level
