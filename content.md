@@ -245,30 +245,42 @@ count: false
 # `ocrd`: A sound workflow
 
 - Page level
-    1. Binarize with `ocrd-olena_binarize -p '{"algo":"sauvola-ms-split"}'`
-    2. Detect page border with `ocrd-anybaseocr-crop`
-    3. Deskew with `ocrd-cis-ocropy-deskew -p '{"level-of-operation":"page"}'`
-    4. Detect regions with `ocrd-esserocr-segment-region`
+    1. Binarize with
+       `ocrd-olena_binarize -p '{"algo":"sauvola-ms-split"}'`
+    2. Detect page border with
+       `ocrd-anybaseocr-crop`
+    3. Deskew with
+       `ocrd-cis-ocropy-deskew -p '{"level-of-operation":"page"}'`
+    4. Detect regions with
+       `ocrd-esserocr-segment-region`
 
 ---
 
 # `ocrd`: A sound workflow
 
 - Region level
-    1. Fix artifacts with `ocrd-segment-repair -p '{"plausibilize":"true"}'`
-    2. Deskew with `ocrd-cis-ocropy-deskew -p '{"level-of-operation":"page"}'`
-    3. Suppress region overlaps with `ocrd-cis-ocropy-clip`
-    4. Detect lines with `ocrd-esserocr-segment-line`
-    5. Tighten regions with `ocrd-segment-repair -p '{"sanitize":"true"}'`
+    1. Fix artifacts with
+       `ocrd-segment-repair -p '{"plausibilize":"true"}'`
+    2. Deskew with
+       `ocrd-cis-ocropy-deskew -p '{"level-of-operation":"page"}'`
+    3. Suppress region overlaps with
+       `ocrd-cis-ocropy-clip`
+    4. Detect lines with
+       `ocrd-esserocr-segment-line`
+    5. Tighten regions with
+       `ocrd-segment-repair -p '{"sanitize":"true"}'`
 
 ---
 
 # `ocrd`: A sound workflow
 
 - Line level
-    1. Suppress line overlaps with `ocrd-cis-ocropy-resegment`
-    2. Dewarp with `ocrd-cis-ocropy-dewarp`
-    3. Recognize text with `ocrd-tesserocr-recognize -p '{"model":"Latin+Japanese"}'`
+    1. Suppress line overlaps with
+       `ocrd-cis-ocropy-resegment`
+    2. Dewarp with
+       `ocrd-cis-ocropy-dewarp`
+    3. Recognize text with
+       `ocrd-tesserocr-recognize -p '{"model":"Latin+Japanese"}'`
 
 ![Japanese with Latin](img/jap_lat.png)
 ```
@@ -326,7 +338,7 @@ Der ſtrengen Schuld vndPflicht.
 .cols[
 .fifty[
 - Often called “superfluous”
-    + > Just feed the neural network what you got
+  > Just feed the neural network what you got
 - High variance in historical digitals
     + Decay of source materials
     + Microfiche
@@ -334,11 +346,10 @@ Der ſtrengen Schuld vndPflicht.
 - Common ground through image preprocessing
     + Reuse existing models
     + Reuse existing software
-    + Less GT necessary
 ]
 .fifty[
 <center>
-<img src="img/arbeiterstimme.jpg" />
+<img src="img/arbeiterstimme.jpg" width="300px" />
 </center>
 ]
 ]
@@ -347,14 +358,14 @@ Der ſtrengen Schuld vndPflicht.
 
 # NB 3: Training Tesseract
 
-- Tesseract's model stack: LINK
+- Tesseract's [model stack](https://github.com/tesseract-ocr/tessdata_best)
     + Trained on **synthetic materials**
         * Web text
         * Many, many fonts
         * Rendered as image
     + Great number of existing models
     + Very robust but often not “great”
-- Training tools for Tesseract:
+- [Training tools](https://github.com/tesseract-ocr/tesstrain) for Tesseract
     + Allows training with **real images**
     + Allows **fine tuning** of existing models
     + Comfortable invocation via `make`
@@ -375,7 +386,7 @@ count: false
 
 - Text recognition is a solved problem.
 - Segmentation into lines is a solved problem.
-- Segmentation into regions is an open problem.
+- **Segmentation into regions is an open problem.**
 
 - Final workshop and evaluation by DFG in February
 - Further maintenance of the OCR-D software stack by SBB, Uni Leipzig and SLUB
