@@ -195,14 +195,14 @@ count: false
 
 # `ocrd`: Available modules and processors
 
-- `ocrd_tesserocr`: Wrappers for [Tesseract](https://github.com/tesseract-ocr/tesseract)
+- [`ocrd_tesserocr`](https://github.com/OCR-D/ocrd_tesserocr): Wrappers for [Tesseract](https://github.com/tesseract-ocr/tesseract)
     + Use API via [`tesserocr`](https://github.com/sirfz/tesserocr)
     + Modular processors for
         * Binarization
         * Deskewing
         * Segmentation (region, line and word output)
         * Text recognition
-- `ocrd_cis_ocropy`: Wrappers for [OCRopy](https://github.com/tmbdev/ocropy)
+- [`ocrd_cis_ocropy`](https://github.com/cisocrgroup/ocrd_cis): Wrappers for [OCRopy](https://github.com/tmbdev/ocropy)
     + Maintained by Robert Sachunsky (University of Leipzig)
     + Includes many bug fixes, optimizations and additions to original OCRopy
     + Modular processors for
@@ -216,14 +216,64 @@ count: false
 
 # `ocrd`: Available modules and processors
 
-- `ocrd_olena`: Wrapper for [Olena/scribo](https://www.lrde.epita.fr/wiki/Olena/Modules#SCRIBO) binarization
+- [`ocrd_olena`](https://github.com/OCR-D/ocrd_olena): Wrapper for [Olena/scribo](https://www.lrde.epita.fr/wiki/Olena/Modules#SCRIBO) binarization
     + Olena: OCR-D-like project in France
     + Many valuable tools
     + In particular, multiple locally adaptive binarization algorithms (e.g., [Wolf et al. 2002](https://hal.archives-ouvertes.fr/hal-02181880/document), [Lazzara and Géraud 2014](https://hal.archives-ouvertes.fr/hal-02181880/document))
+- [`ocrd_anybaseocr`](https://github.com/mjenckel/ocrd_anybaseocr): Image preprocessing and layout analysis tool developed by the DFKI
+    + Loosely based on OCRopus
+    + Extended with data-driven tools for:
+        * Dewarping
+        * Text-image detection
+        * Segmentation (region and line output)
+        * Layout-semantic annotation
+
+---
+
+# `ocrd`: Available modules and processors
+
+- [`ocrd_segment`](https://github.com/OCR-D/ocrd_segment): Worflow-relevant, segmentation-related processors
+    + Rule-based post processing of segmentation results using [`shapely`](https://github.com/Toblerity/Shapely)
+    + Evaluation of segmentation by GT comparison (WIP)
+- [`ocrd_kraken`](https://github.com/OCR-D/ocrd_kraken): Wrappers for the [kraken OCR suite](http://kraken.re/)
+- [`ocrd_calamari`](https://github.com/OCR-D/ocrd_calamari): Wrappers for the [Calamari OCR engine](https://github.com/Calamari-OCR/calamari)
+- [`dinglehopper`](https://github.com/qurator-spk/dinglehopper): OCR evaluation tool developed by Qurator with an OCR-D interface
+- ...
 
 ---
 
 # `ocrd`: A sound workflow
+
+- Page level
+    1. Binarize with `ocrd-olena_binarize -p '{"algo":"sauvola-ms-split"}'`
+    2. Detect page border with `ocrd-anybaseocr-crop`
+    3. Deskew with `ocrd-cis-ocropy-deskew -p '{"level-of-operation":"page"}'`
+    4. Detect regions with `ocrd-esserocr-segment-region`
+
+---
+
+# `ocrd`: A sound workflow
+
+- Region level
+    1. Fix artifacts with `ocrd-segment-repair -p '{"plausibilize":"true"}'`
+    2. Deskew with `ocrd-cis-ocropy-deskew -p '{"level-of-operation":"page"}'`
+    3. Suppress region overlaps with `ocrd-cis-ocropy-clip`
+    4. Detect lines with `ocrd-esserocr-segment-line`
+    5. Tighten regions with `ocrd-segment-repair -p '{"sanitize":"true"}'`
+
+---
+
+# `ocrd`: A sound workflow
+
+- Line level
+    1. Suppress line overlaps with `ocrd-cis-ocropy-resegment`
+    2. Dewarp with `ocrd-cis-ocropy-dewarp`
+    3. Recognize text with `ocrd-tesserocr-recognize -p '{"model":"Latin+Japanese"}'`
+
+![Japanese with Latin](img/jap_lat.png)
+```
+レコ ー ド で は EMI、 カ プリ ッ ツ ィ オ 、 和 徳間 な どの レー ヴェ ル で
+```
 
 ---
 
@@ -273,9 +323,44 @@ Der ſtrengen Schuld vndPflicht.
 
 # NB 2: Image preprocessing
 
+.cols[
+.fifty[
+- Often called “superfluous”
+    + > Just feed the neural network what you got
+- High variance in historical digitals
+    + Decay of source materials
+    + Microfiche
+    + Image-text mix
+- Common ground through image preprocessing
+    + Reuse existing models
+    + Reuse existing software
+    + Less GT necessary
+]
+.fifty[
+<center>
+<img src="img/arbeiterstimme.jpg" />
+</center>
+]
+]
+
 ---
 
 # NB 3: Training Tesseract
+
+- Tesseract's model stack: LINK
+    + Trained on **synthetic materials**
+        * Web text
+        * Many, many fonts
+        * Rendered as image
+    + Great number of existing models
+    + Very robust but often not “great”
+- Training tools for Tesseract:
+    + Allows training with **real images**
+    + Allows **fine tuning** of existing models
+    + Comfortable invocation via `make`
+- In combination with the workflow sketched above:
+![Line of handwritten text](img/htr_line.png)
+- **Handwritten text recognition** with Tesseract is possible!  
 
 ---
 
