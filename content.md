@@ -380,9 +380,9 @@ Der ſtrengen Schuld vndPflicht.
 
 ---
 
-# NB 3: Training Tesseract
-
 count: false
+
+# NB 3: Training Tesseract
 
 - Tesseract's [model stack](https://github.com/tesseract-ocr/tessdata_best)
     + Trained on **synthetic materials**
