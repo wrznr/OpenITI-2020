@@ -250,13 +250,13 @@ count: false
 
 - Page level
     1. Binarize with
-       `ocrd-olena_binarize -p '{"algo":"sauvola-ms-split"}'`
+       `ocrd-olena_binarize -p '{"impl":"sauvola-ms-split"}'`
     2. Detect page border with
        `ocrd-anybaseocr-crop`
     3. Deskew with
        `ocrd-cis-ocropy-deskew -p '{"level-of-operation":"page"}'`
     4. Detect regions with
-       `ocrd-esserocr-segment-region`
+       `ocrd-tesserocr-segment-region`
 .cols[
 .thirty[
 <center>
@@ -287,7 +287,7 @@ count: false
     3. Suppress region overlaps with
        `ocrd-cis-ocropy-clip`
     4. Detect lines with
-       `ocrd-esserocr-segment-line`
+       `ocrd-tesserocr-segment-line`
     5. Tighten regions with
        `ocrd-segment-repair -p '{"sanitize":"true"}'`
 .cols[
@@ -463,11 +463,15 @@ class: part-slide
 <center>
 <a href="https://wrznr.github.io/OpenITI-2020/">wrznr.github.io/OpenITI-2020</a>
 </center>
-- For OCR-D related documentation, presentations, and tutorials, check
+----
+<br/>
+For OCR-D related documentation, presentations, and tutorials, check
 <center>
 <a href="https://ocr-d.github.io/">ocr-d.github.io</a>
 </center>
-- For OCR-D software, check
+<br/>
+<br/>
+For OCR-D software, check
 <center>
 <a href="https://github.com/OCR-D/">github.com/OCR-D</a>
 </center>
