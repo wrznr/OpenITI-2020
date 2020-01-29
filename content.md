@@ -463,11 +463,11 @@ class: part-slide
 <center>
 <a href="https://wrznr.github.io/OpenITI-2020/">wrznr.github.io/OpenITI-2020</a>
 </center>
-For OCR-D related documentation, presentations, and tutorials, check
+- For OCR-D related documentation, presentations, and tutorials, check
 <center>
 <a href="https://ocr-d.github.io/">ocr-d.github.io</a>
 </center>
-For OCR-D software, check
+- For OCR-D software, check
 <center>
 <a href="https://github.com/OCR-D/">github.com/OCR-D</a>
 </center>
