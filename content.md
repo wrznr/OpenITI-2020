@@ -260,17 +260,17 @@ count: false
 .cols[
 .thirty[
 <center>
-<img src="img/picture.png" width="200px" />
+<img src="img/picture.png" width="180px" />
 </center>
 ]
 .thirty[
 <center>
-<img src="img/cropped.png" width="200px" />
+<img src="img/cropped.png" width="180px" />
 </center>
 ]
 .thirty[
 <center>
-<img src="img/regions.png" width="200px" />
+<img src="img/regions.png" width="180px" />
 </center>
 ]
 ]
@@ -283,7 +283,7 @@ count: false
     1. Fix artifacts with
        `ocrd-segment-repair -p '{"plausibilize":"true"}'`
     2. Deskew with
-       `ocrd-cis-ocropy-deskew -p '{"level-of-operation":"page"}'`
+       `ocrd-cis-ocropy-deskew -p '{"level-of-operation":"region"}'`
     3. Suppress region overlaps with
        `ocrd-cis-ocropy-clip`
     4. Detect lines with
@@ -293,17 +293,17 @@ count: false
 .cols[
 .thirty[
 <center>
-<img src="img/regions.png" width="200px" />
+<img src="img/regions.png" width="150px" />
 </center>
 ]
 .thirty[
 <center>
-<img src="img/lines.png" width="200px" />
+<img src="img/lines.png" width="150px" />
 </center>
 ]
 .thirty[
 <center>
-<img src="img/sanitize.png" width="200px" />
+<img src="img/sanitize.png" width="150px" />
 </center>
 ]
 ]
