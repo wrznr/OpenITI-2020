@@ -257,6 +257,23 @@ count: false
        `ocrd-cis-ocropy-deskew -p '{"level-of-operation":"page"}'`
     4. Detect regions with
        `ocrd-esserocr-segment-region`
+.cols[
+.thirty[
+<center>
+<img src="img/picture.png" width="200px" />
+</center>
+]
+.thirty[
+<center>
+<img src="img/picture.png" width="200px" />
+</center>
+]
+.thirty[
+<center>
+<img src="img/picture.png" width="200px" />
+</center>
+]
+]
 
 ---
 
