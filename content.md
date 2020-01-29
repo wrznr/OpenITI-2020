@@ -189,7 +189,7 @@ count: false
         + Used for parameter handover
     * [PNG](http://www.libpng.org/pub/png/)
         + Used to store intermediate results (i.e., `AlternativeImage`)
-- ...
+- ALTO XML available via [`ocr-fileformat`](https://github.com/UB-Mannheim/ocr-fileformat)
 
 ---
 
