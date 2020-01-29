@@ -265,12 +265,12 @@ count: false
 ]
 .thirty[
 <center>
-<img src="img/picture.png" width="200px" />
+<img src="img/cropped.png" width="200px" />
 </center>
 ]
 .thirty[
 <center>
-<img src="img/picture.png" width="200px" />
+<img src="img/regions.png" width="200px" />
 </center>
 ]
 ]
@@ -290,6 +290,23 @@ count: false
        `ocrd-esserocr-segment-line`
     5. Tighten regions with
        `ocrd-segment-repair -p '{"sanitize":"true"}'`
+.cols[
+.thirty[
+<center>
+<img src="img/regions.png" width="200px" />
+</center>
+]
+.thirty[
+<center>
+<img src="img/lines.png" width="200px" />
+</center>
+]
+.thirty[
+<center>
+<img src="img/sanitize.png" width="200px" />
+</center>
+]
+]
 
 ---
 
@@ -445,4 +462,12 @@ class: part-slide
 
 <center>
 <a href="https://wrznr.github.io/OpenITI-2020/">wrznr.github.io/OpenITI-2020</a>
+</center>
+For OCR-D related documentation, presentations, and tutorials, check
+<center>
+<a href="https://ocr-d.github.io/">ocr-d.github.io</a>
+</center>
+For OCR-D software, check
+<center>
+<a href="https://github.com/OCR-D/">github.com/OCR-D</a>
 </center>
