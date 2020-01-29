@@ -78,7 +78,7 @@ count: false
 
 # OCR-D: Timeline
 
-- Stage 1 (2015--2017)
+- Stage 1 (2015–2017)
     + Identification of requirements
     + Setting up a call for participation
     + Planning a technical framework
@@ -88,7 +88,7 @@ count: false
 
 # OCR-D: Timeline
 
-- Stage 2 (2018--2020)
+- Stage 2 (2018–2020)
     + Implementing the technical framework
     + (Quasi-)Simultaneous operation of **eight module projects**
         * **Image optimization**: German Research Centre for Artificial Intelligence
@@ -111,7 +111,7 @@ count: false
 # OCR-D: Timeline
 
 - Hiatus (Final workshop in Bonn, 2020-02-12)
-- Stage 3 (2020--2023, if approved)
+- Stage 3 (2020–2023, if approved)
     + Instanciation of the OCR-D software in libraries and archives
     + Development of usage models
         * Commercial providers of digitization services?
@@ -144,7 +144,7 @@ count: false
         + Formats
         + Interfaces
     2. API/CLI
-        + Python- and BASH-based
+        + Python- and Bash-based
         + Exposing formats and interfaces
         + Provides common utility functions (e.g. image rotation and cutting)
     3. Sample processors
